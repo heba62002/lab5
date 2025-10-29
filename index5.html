@@ -1,61 +1,158 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body class="bg-dark">
+  <div class="container text-center d-flex flex-column align-items-center py-5">
+
+    <h3 class="mb-3 text-sucesess mb-4 w-75">Cover</h3>
+
+    <div class="mb-3">
+      <a href="#" class="d-block mb-1 text-warning">Home</a>
+      <a href="#" class="d-block mb-1 text-warning">Feature</a>
+      <a href="#" class="d-block mb-1 text-warning">Content</a>
+    </div>
+
+    <h1 class="mb-3 mb-3 text-sucesess mb-4 w-75">Cover your page</h1>
+
+<p class="text-white mb-4 w-75">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis enim cupiditate quas modi delectus.
+  Eos dolore quas provident impedit eaque itaque quisquam tenetur atque nihil, voluptate aliquid quam earum vel.
+</p>
+
+    <button type="button" class="btn btn-secondary">Secondary</button>
+
+  </div>
+</body>
+
+</html> -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
 
-*{
-    margin:0
-}
-      nav{
+    .left-side {
+      background-color: #f5a623; /* برتقالي */
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+    }
 
-        width: 100vw;
-        background-color: rgb(40, 110, 172);
-      }
-      
+    .right-side {
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-      nav a{
-        display: inline-block;
-        color: aliceblue;
-        padding: 8PX 16PX;
-        text-decoration:double;
-      }
-      
+    .login-box {
+      width: 100%;
+      max-width: 350px;
+      text-align: center;
+    }
 
-      nav a.active{
-        background-color: azure;
-        color: brown;
-      }
+    .login-box h2 {
+      font-weight: 600;
+      color: #f5a623;
+    }
 
-      nav a:hover:not(.active){
+    .form-control {
+      border-radius: 25px;
+      padding: 10px 20px;
+    }
 
-        background-color: deeppink;
-        color: black;
-      }
+    .btn-login {
+      width: 100%;
+      border-radius: 25px;
+      background-color: #000;
+      color: #fff;
+      font-weight: 500;
+      padding: 10px;
+      transition: 0.3s;
+    }
 
-      input[type=text]{
+    .btn-login:hover {
+      background-color: #333;
+    }
 
-        width:200px;
-        padding: 10px;
-        border:non ;
-         
-      }
-    </style>
+    .signup-text {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .signup-text a {
+      color: #f5a623;
+      text-decoration: none;
+    }
+
+    .signup-text a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
-  <nav>
+  <div class="container-fluid">
+    <div class="row g-0">
 
-    <a href="#" style="position: absolute;right: 10px;">About</a>
-    <a href="#">home</a>
-    <a href="#">new</a>
-    <a href="#">contact</a>
-  </nav>
 
-  <input type="text">
-  <input type="submit">
+      <div class="col-md-6 left-side">
+        <h1>Welcome!</h1>
+        <p>We're glad to see you again.</p>
+      </div>
 
+      <div class="col-md-6 right-side">
+        <div class="login-box">
+          <h2>Welcome Back</h2>
+          <p class="text-muted mb-4">Please enter your details</p>
+
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Enter your username/email" required>
+            </div>
+
+            <div class="mb-3">
+              <input type="password" class="form-control" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="btn btn-login">Login In</button>
+          </form>
+
+          <p class="signup-text">
+            Don’t have an account? <a href="#">Sign Up Now</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
 
 </html>
