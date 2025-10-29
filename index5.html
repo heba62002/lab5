@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+*{
+    margin:0
+}
+      nav{
+
+        width: 100vw;
+        background-color: rgb(40, 110, 172);
+      }
+      
+
+      nav a{
+        display: inline-block;
+        color: aliceblue;
+        padding: 8PX 16PX;
+        text-decoration:double;
+      }
+      
+
+      nav a.active{
+        background-color: azure;
+        color: brown;
+      }
+
+      nav a:hover:not(.active){
+
+        background-color: deeppink;
+        color: black;
+      }
+
+      input[type=text]{
+
+        width:200px;
+        padding: 10px;
+        border:non ;
+         
+      }
+    </style>
+</head>
+<body>
+  <nav>
+
+    <a href="#" style="position: absolute;right: 10px;">About</a>
+    <a href="#">home</a>
+    <a href="#">new</a>
+    <a href="#">contact</a>
+  </nav>
+
+  <input type="text">
+  <input type="submit">
+
+
+</html>
